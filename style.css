@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Outfit;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body main {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: hsl(216, 50%, 16%);
+  width: 350px;
+}
+
+body main img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+body main h1 {
+  font-weight: 600;
+  color: white;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+body main p {
+  font-size: 18px;
+  font-weight: 400;
+  color: hsl(215, 51%, 70%);
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+body main .price-days {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  border-bottom: solid 1px hsl(215, 51%, 70%);
+  margin-top: 10px;
+}
+
+body main .price-days span {
+  font-weight: 600;
+}
+
+body main .price-days .price {
+  display: flex;
+  align-items: center;
+  color: hsl(178, 100%, 50%);
+}
+
+body main .price-days .price img {
+  width: 10%;
+  margin-right: 5px;
+}
+
+body main .price-days .days {
+  display: flex;
+  align-items: center;
+  color: hsl(215, 51%, 70%);
+}
+
+body main .price-days .days img {
+  width: 17%;
+  margin-right: 5px;
+}
+
+body main .bottom img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+body main .bottom {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+body main .bottom a {
+  text-decoration: none;
+  color: white;
+}
+
+body .attribution {
+  color: hsl(215, 51%, 70%);
+  margin-top: 15px;
+}
+
+body .attribution a {
+  text-decoration: none;
+  color: white;
+}
+
+body main .hover-text:hover {
+  color: hsl(178, 100%, 50%);
+  transition: all ease-in-out 0.2s;
+}
+body main .image-overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+body main .image-overlay .nft {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+body main .image-overlay .view {
+  opacity: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+body main .image-overlay .view:hover {
+  opacity: 80%;
+  background-color: hsla(178, 100%, 50%, 60%);
+  transition: all ease-in-out 0.2s;
+}
